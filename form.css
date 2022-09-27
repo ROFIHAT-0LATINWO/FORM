@@ -1,0 +1,92 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+.content{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 25rem;
+    /* min-height: 100vh; */
+    background:linear-gradient(green,gold,green,green);
+padding-bottom: 70px;
+}
+
+.content form{
+    padding: 100px;
+    width: 700px;background: wheat;
+    box-shadow: 0 5px 10px black(0,0,0,.1);
+}
+
+.content form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content form .col{
+    flex: 1 1 250px;
+}
+
+.content form .row .col .title{
+    font-size: 20px;
+    color: #335;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.content form .row .col .inputBox{
+    margin: 5px;
+}
+
+.content form .row .col .inputBox span{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.content form .row .col .inputBox .input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.content form .row .col .inputBox input:focus{
+    border: 1px solid #000;
+}
+
+.content form .row .col .flex{
+    display: flex;
+    gap: 15px;
+}
+
+.content form .row .col .flex .inputBox{
+    margin-top: 5px;
+}
+
+.content form .row .col .flex .inputBox img{
+    height: 45px;
+    width: 70px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.content form .submit-btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: lightsalmon;
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.content form .submit-btn:hover{
+    background: lightcoral;
+}
